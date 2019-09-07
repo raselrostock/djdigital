@@ -1,0 +1,75 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+	@include bg-gradients;
+	border: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: $color__background-body;
+	font-family: $font__roboto;
+	font-size: $font__size-sm;
+	font-weight: 700;
+	line-height: $font__line-height-heading;
+	outline: none;
+	padding: ($size__spacing-unit * .76) $size__spacing-unit;
+	text-decoration: none;
+	vertical-align: bottom;
+
+	&:hover,
+	&:active {
+		outline: none;
+		color: #fff;
+		@include bg-gradients;
+		border-color: $color-site-primary !important;
+		cursor: pointer;
+	}
+
+	&:visited {
+		outline: none;
+		color: #fff;
+		@include bg-gradients;
+		border-color: $color-site-primary !important;
+		text-decoration: none;
+	}
+
+	&:focus {
+		color: #fff;
+		@include bg-gradients;
+		border-color: $color-site-primary !important;
+		outline: none;
+		outline-offset: -4px;
+	}
+
+	.btn-sitemain {
+		border: none;
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: $color__background-body;
+		font-family: $font__roboto;
+		font-size: $font__size-sm;
+		font-weight: 700;
+		line-height: $font__line-height-heading;
+		outline: none;
+		padding: ($size__spacing-unit * .76) $size__spacing-unit;
+		text-decoration: none;
+		vertical-align: bottom;
+	}
+
+	.btn:not(:disabled):not(.disabled).active,
+	.btn:not(:disabled):not(.disabled):active {
+		background: linear-gradient(to right, #61ba6d, #83c331) !important;
+		color: #fff;
+	}
+}
+
+.btn__alert {
+	font-size: 1.3rem !important;
+	background: linear-gradient(to right, #61ba6d, #83c331);
+}
+
+.btn-secondary {
+	color: #fff !important;
+}

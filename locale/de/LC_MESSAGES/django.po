@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-31 17:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\djdigital\settings\translate_settings.py:10
+msgid "EN"
+msgstr ""
+
+#: .\djdigital\settings\translate_settings.py:11
+msgid "DE"
+msgstr ""
+
+#: .\djdigital\views.py:15
+msgid "Home"
+msgstr "Zuhause"
+
+#: .\templates\home.html:77
+msgid "Facts that Make us Unique"
+msgstr "Fakten, die uns einzigartig machen"
+
+#: .\templates\home.html:78
+msgid "There is a moment in the life of any aspiring astronomer that,"
+msgstr "Es gibt einen Moment im Leben eines aufstrebenden Astronomen, der"
+
+#: .\templates\home.html:79
+msgid "it is time to buy that first telescope."
+msgstr "Es ist Zeit, das erste Teleskop zu kaufen."
+
+#: .\templates\home.html:80
+msgid "It’s exciting to think about setting up your own viewing station."
+msgstr ""
+"Es ist aufregend, über die Einrichtung einer eigenen Anzeigestation "
+"nachzudenken."
+
+#: .\templates\home.html:81
+msgid "Apply Now"
+msgstr "Jetzt bewerben"
+
+#: .\templates\home.html:90 .\templates\home.html:91
+msgid "Search Courses.."
+msgstr "Kurse suchen.."
+
+#: .\templates\home.html:92
+msgid "Search"
+msgstr "Suche"
+
+#~ msgid "100+ Courses"
+#~ msgstr "Über 100 Kurse"
+
+#~ msgid "You will get more than 100 courses over here."
+#~ msgstr "Sie erhalten hier mehr als 100 Kurse."
+
+#~ msgid "See More"
+#~ msgstr "Mehr sehen"
+
+#~ msgid "Student Membership"
+#~ msgstr "Studentenmitgliedschaft"
+
+#~ msgid "By subscribing a membership, you are ready to go."
+#~ msgstr "Wenn Sie eine Mitgliedschaft abonnieren, können Sie loslegen."

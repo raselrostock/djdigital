@@ -1,0 +1,124 @@
+.memberships__section {
+    font-family: $font__roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color__text-main;
+}
+
+.section__title {
+    margin: 0 auto 20px;
+    padding: 0;
+    font-family: $font__raleway;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: $color__text-main;
+}
+
+.plan__wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: $font__roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color__text-main;
+
+    @include media(mobilemedium) {
+        margin: 15px 0;
+    }
+}
+
+.plan__title {
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: $font__roboto;
+    font-weight: 600;
+    font-size: 22px;
+    color: $color-site-primary;
+}
+
+.plan__price {
+    margin: 0;
+    padding: 0;
+    font-family: $font__roboto;
+    font-weight: 400;
+    font-size: 20px;
+    color: $color__text-main;
+}
+
+.plan__price__sym {
+    font-family: $font__roboto;
+    font-weight: 700;
+    font-size: 22px;
+    color: $color__text-main;
+}
+
+.plan__subtitle {
+    margin: 20px 0;
+    padding: 0;
+    font-family: $font__roboto;
+    font-weight: 500;
+    font-size: 22px;
+    color: $color__text-main;
+}
+
+.currentmembership__text {
+    margin: 20px 0;
+    padding: 0;
+    font-family: $font__roboto;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color__text-main;
+}
+
+.plan__wrapper form a {
+    color: #fff !important;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:link {
+        text-decoration: none;
+        color: #fff !important;
+    }
+}
+
+.plan__courselist {
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: $font__roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color__text-main;
+}
+
+.enroll__course a:hover,
+.user__membership a:hover,
+.enroll__course a:visited,
+.user__membership a:visited,
+.enroll__course a:active,
+.user__membership a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.unsubscribe__btn,
+.subscribe__btn,
+.update__btn {
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+    background: linear-gradient(to right, #61ba6d, #83c331);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff !important;
+    font-family: $font__roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    outline: none;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    vertical-align: bottom;
+    width: 175px;
+}

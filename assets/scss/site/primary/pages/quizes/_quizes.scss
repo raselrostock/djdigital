@@ -1,0 +1,71 @@
+.quiz__section {
+    font-family: $font__roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color__text-main;
+}
+
+.quiz__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.quiz__header {
+    font-family: $font__roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color__text-main;
+    text-align: center;
+}
+
+.quiz__title {
+    font-size: 18px;
+}
+
+.quiz__subtitle {
+    font-size: 1rem;
+}
+
+.quiz__content {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px dashed $color-site-primary;
+    font-family: $font__roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color__text-main;
+}
+
+.quiz__content h3 {
+    font-family: $font__roboto;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color__text-main;
+}
+
+.quiz__content input[type="radio"] {
+    display: inline-block;
+}
+
+.quiz__submit {
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+    background: linear-gradient(to right, #61ba6d, #83c331);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: .88889em;
+    font-weight: 700;
+    line-height: 1.2;
+    outline: none;
+    padding: .76rem 1rem;
+    text-decoration: none;
+    vertical-align: bottom;
+    margin: 10px auto !important;
+    display: flex;
+}

@@ -1,0 +1,215 @@
+.popular-course .popular-course__thumb {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 46%;
+    flex: 0 0 46%;
+    max-width: 46%;
+    width: 46%;
+    height: 350px;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Top Popular Course Area CSS */
+
+.popular-course {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    background-color: #eef3f6;
+    font-family: $font__roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    @include media(tablet) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    @include media(desktop) {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @include media(mobile) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @include media(mobilemedium) {}
+
+    @include media(mobilesmall) {
+        display: block !important;
+        text-align: center;
+    }
+
+    .popular-course__content {
+        @include flex(0 0 54%);
+        max-width: 54%;
+        width: 54%;
+        padding: 30px;
+
+        @include media(mobile) {}
+
+        @include media(mobilemedium) {}
+
+        @include media(mobilesmall) {
+            display: block;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        h5 {
+            font-family: $font__roboto;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 8px;
+            padding: 0;
+        }
+
+        .course__mark {
+            background: #2e21df;
+            margin: 15px auto;
+            width: 70%;
+            text-align: center;
+            padding: 10px;
+            font-family: $font__roboto;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+
+            @include media(desktop) {
+                width: 100%;
+            }
+
+            @include media(mobile) {
+                width: 100%;
+            }
+
+            @include media(mobilemedium) {
+                width: 100%;
+            }
+        }
+
+        span {
+            font-size: 15px;
+            color: $color-site-primary;
+            font-family: $font__raleway;
+            font-weight: 500;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .course-ratings {
+            font-size: 10px;
+            color: #fbb710;
+            margin-bottom: 30px;
+
+            .fa-star-o {
+                color: #e0e3e4;
+            }
+
+            .star {
+                @include media(mobile) {}
+
+                @include media(mobilemedium) {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .popular-course__thumb {
+        @include flex(0 0 46%);
+        max-width: 46%;
+        width: 46%;
+        height: 350px;
+
+        @include media(mobile) {}
+
+        @include media(mobilemedium) {}
+
+        @include media(mobilesmall) {
+            display: block !important;
+            width: 80%;
+            max-width: 80% !important;
+            margin: 0 auto;
+            height: 200px;
+        }
+    }
+}
+
+.course-btn.btn-sm {
+    min-width: 110px;
+    padding: 0 20px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.course-btn {
+    display: inline-block;
+    min-width: 150px;
+    height: 50px;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 0;
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 50px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    background: #61ba6d;
+    background-image: -webkit-linear-gradient(left, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
+    background-image: linear-gradient(to right, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
+    font-weight: 500;
+    font-family: $font__roboto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @include media(mobilemedium) {
+        font-size: 15px;
+        margin: 0;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    &:hover,
+    &:active,
+    &:link {
+        text-decoration: none;
+        color: #ffffff !important;
+        background: #61ba6d;
+        background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+        background: linear-gradient(to right, #61ba6d, #83c331);
+    }
+}
+
+/* ##### Pagination #####*/
+.pagination__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff !important;
+    background-color: $color-site-primary;
+    border-color: $color-site-primary;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: $color-site-primary !important;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}

@@ -1,0 +1,446 @@
+/* Start Mixin Css
+============================================================================================ */
+
+/* End Mixin Css
+============================================================================================ */
+/* Start Sticky Header Area css
+============================================================================================ */
+@mixin bg-gradients {
+	background: #61ba6d;
+	background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+	background: linear-gradient(to right, #61ba6d, #83c331);
+}
+
+@mixin transition($args: all 0.3s ease 0s) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+@mixin gradient2($deg, $args1, $args2, $args3) {
+	background: -webkit-linear-gradient($deg, $args1, $args2, $args3);
+	background: -moz-linear-gradient($deg, $args1, $args2, $args3);
+	background: -ms-linear-gradient($deg, $args1, $args2, $args3);
+	background: -o-linear-gradient($deg, $args1, $args2, $args3);
+	background: linear-gradient($deg, $args1, $args2, $args3);
+}
+
+@mixin placeholder {
+	&.placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+$white-color: #ffffff;
+$primary-color: #00aee0;
+$primary-color2: #00fedc;
+
+@mixin transform($value) {
+	-webkit-transform: $value;
+	transform: $value;
+}
+
+$bg-default: #61ba6d;
+
+.site {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.sticky-header {
+	position: absolute;
+	width: 100%;
+	height: 85px;
+	background-color: transparent;
+	top: 0;
+	z-index: 100;
+	left: 0;
+	right: 0;
+
+	@include media(mobilemedium) {
+		height: 70px;
+	}
+
+	.classy-sticky-container {
+		background-color: transparent;
+		position: relative;
+		z-index: 100;
+	}
+
+	.classy-sticky-container * {
+		box-sizing: border-box;
+	}
+
+	.sticky-wrapper {
+		background-color: white;
+		height: 85px;
+		padding: 0;
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-ms-grid-row-align: center;
+		align-items: center;
+
+		@include media(mobilemedium) {
+			height: 70px;
+		}
+	}
+
+	.justify-content-between {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.site-brand {
+		padding-left: 2em;
+	}
+
+	.logo {
+		max-height: 60px;
+		max-width: 60px;
+		overflow: hidden;
+
+		@include media(mobilemedium) {
+			max-height: 50px;
+			max-width: 50px;
+		}
+	}
+
+	.language-wrapper {
+		position: relative;
+		padding-left: 80px;
+		overflow: hidden;
+	}
+
+	.language-content {
+		position: relative;
+		z-index: 1;
+		@include bg-gradients;
+		padding: 0 40px 0 200px;
+		line-height: 85px;
+		height: 85px;
+
+		@include media(mobile) {
+			padding: 0 40px 0 80px;
+		}
+
+		@include media(mobilemedium) {
+			height: 70px;
+			line-height: 70px;
+			padding: 0 40px 0 40px;
+		}
+
+		@include media(mobilesmall) {
+			height: 70px;
+			line-height: 70px;
+			padding: 0 40px 0 40px;
+		}
+
+		&:before {
+			position: absolute;
+			width: 50px;
+			height: 120%;
+			top: 3px;
+			left: -28px;
+			z-index: 1;
+			background-color: $bg-default;
+			content: '';
+			@include transform(rotate(30deg));
+
+			@include media(mobilemedium) {
+				top: 5px;
+			}
+		}
+	}
+}
+
+/* Strat Big Features Area css
+============================================================================================ */
+.hero_area {
+	width: 100%;
+	height: 100% !important;
+	position: relative;
+	color: #fff;
+	background-image: url(../img/hero-bg.jpg);
+	background-size: cover;
+	z-index: 1;
+	padding: 120px 0 90px;
+
+	@include media(mobilemedium) {
+		padding: 80px 0 10px;
+	}
+
+	@include media(mobile) {
+		height: auto;
+	}
+
+	&.overlay:after {
+		background: #000;
+		opacity: 0.6;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		content: "";
+		z-index: -1;
+	}
+}
+
+.main_title {
+	text-align: center;
+	margin-bottom: 75px;
+
+	@include media(mobile) {
+		margin: 50px 0 50px;
+	}
+
+	@include media(mobilemedium) {
+		margin: 50px 0 100px;
+	}
+
+	@include media(mobilesmall) {
+		margin: 50px 0 100px;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 30px;
+		font-weight: bold;
+		margin-bottom: 15px;
+
+		@include media(mobilemedium) {
+			font-size: 22px;
+			margin-bottom: 5px;
+		}
+
+		@include media(mobile) {
+			font-size: 26px;
+			line-height: 26px;
+			margin-bottom: 10px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 0px;
+		max-width: 570px;
+		font-weight: 300;
+		margin: auto;
+
+		@include media(mobilemedium) {
+			max-width: 80%;
+			margin-bottom: 10px;
+		}
+
+		@include media(mobile) {
+			max-width: 80%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.apply-btn {
+	display: inline-block;
+	min-width: 150px;
+	height: 50px;
+	color: #ffffff !important;
+	border: none;
+	border-radius: 0;
+	padding: 0 20px;
+	font-size: 20px;
+	line-height: 50px;
+	-webkit-transition: all 500ms;
+	transition: all 500ms;
+	// background: #61ba6d;
+	// background-image: -webkit-linear-gradient(left, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
+	// background-image: linear-gradient(to right, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+
+	@include media(mobile) {
+		font-size: 14px;
+		margin: 0;
+		height: 40px;
+		line-height: 40px;
+		font-weight: 500;
+	}
+
+	@include media(mobilemedium) {
+		font-size: 16px;
+		margin: 0;
+		height: 35px;
+		line-height: 35px;
+		font-weight: 500;
+	}
+
+
+
+	&:hover,
+	&:active,
+	&:link {
+		text-decoration: none;
+		color: #ffffff !important;
+		// background: #61ba6d;
+		// background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+		// background: linear-gradient(to right, #61ba6d, #83c331);
+	}
+}
+
+.search_course_wrap {
+	margin-top: 40px;
+	margin-bottom: 50px;
+
+	.form_box {
+		background: rgba(131, 195, 49, 0.3);
+		width: 350px;
+		padding: 10px 0px;
+
+		@include media(mobilemedium) {
+			width: 80% !important;
+		}
+
+		@include media(mobilesmall) {
+			width: 90% !important;
+			margin: 0 auto;
+		}
+	}
+
+	.form-control {
+		height: 40px;
+		background: transparent;
+		padding: 0 15px;
+		border-radius: 0;
+		display: inline-block;
+		border: 0;
+
+		@include media(mobilesmall) {
+			width: 200px !important;
+			padding: 0 5px;
+		}
+	}
+
+	input {
+		font-size: 18px;
+		color: #ffffff;
+		font-family: $font__raleway;
+		font-weight: 500;
+
+		@include placeholder {
+			font-size: 18px;
+			color: #ffffff;
+			font-family: $font__raleway;
+			font-weight: 500;
+		}
+
+		&:focus {
+			box-shadow: none;
+			font-size: 18px;
+			color: #ffffff;
+			font-family: $font__raleway;
+			font-weight: 500;
+			border-color: none !important;
+			outline: none !important;
+			outline-offset: none !important;
+		}
+	}
+
+	.search_course_btn {
+		background: #61ba6d;
+		background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+		background: linear-gradient(to right, #61ba6d, #83c331);
+		background-size: 200% auto;
+		border-radius: 0;
+		color: #fff;
+		position: relative;
+		left: 80px;
+		padding: 10px 30px;
+		border: 0;
+		font-size: 16px;
+		font-family: $font__raleway;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include transition();
+
+		@include media(mobilemedium) {
+			left: 50px;
+			padding: 5px 20px;
+			font-size: 14;
+			font-weight: 400;
+		}
+
+		@include media(mobilesmall) {
+			left: -20px;
+			padding: 5px 20px;
+			font-size: 14;
+			font-weight: 400;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		&:hover,
+		&:active {
+			background: #61ba6d !important;
+			background: -webkit-linear-gradient(to right, #61ba6d, #83c331) !important;
+			background: linear-gradient(to right, #61ba6d, #83c331) !important;
+			background-position: right center;
+		}
+	}
+}
+
+.ac-results {
+	font-weight: 400;
+	font-size: 18px;
+	width: 250px;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	margin-top: 50px;
+	color: $color__text-white;
+	font-family: $font__roboto;
+
+	.result-wrapper {
+		width: 100%;
+		padding: 3px 18px;
+
+		a {
+			color: $color__text-white;
+			font-family: $font__roboto;
+			font-weight: 400;
+			font-size: 18px;
+
+			&:hover,
+			&:active {
+				text-decoration: none;
+				color: $color__text-white;
+			}
+		}
+	}
+}
+
+/* End Hero Area css
+  ============================================================================================ */

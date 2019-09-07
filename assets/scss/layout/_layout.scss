@@ -1,0 +1,47 @@
+/** === Layout === */
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	background: $color__text-white;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 50px 0 0px;
+	font-family: $font__roboto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color__text-main;
+}
+
+.content-wrapper {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 50px 0;
+	font-family: $font__roboto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color__text-main;
+}
+
+#main-footer {
+	position: relative;
+	// bottom: 0;
+	width: 100%;
+	//min-height: $fixed__site-height;
+	//@include bg-gradients;
+}
+
+.section__gap {
+	padding: 50px 0 30px;
+}
+
+.alert__section {
+	width: 80%;
+	margin: 0 auto 20px;
+}

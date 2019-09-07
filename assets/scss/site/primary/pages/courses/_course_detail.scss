@@ -1,0 +1,382 @@
+/* Start Courses Details Area css
+============================================================================================ */
+.course__details {
+	.title {
+		font-size: 21px;
+		border: none;
+		cursor: pointer;
+		margin-top: 40px;
+		border-bottom: 1px solid #eeeeee;
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: 22px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			height: 1px;
+			width: 74px;
+			background: #4dbf1c;
+		}
+	}
+}
+
+.course__details--left {
+	@include media(tablet) {
+		margin: 10px auto;
+		width: 80%;
+	}
+
+	@include media(mobile) {
+		margin: 10px auto;
+		width: 80%;
+	}
+
+	@include media(mobilemedium) {
+		margin: 10px auto;
+		width: 90%;
+	}
+
+	@include media(mobilesmall) {
+		margin: 10px auto;
+		width: 90%;
+	}
+
+	.course_wrapper {}
+
+	.content {}
+
+	.lesson-list {
+		margin-bottom: 0;
+
+		//   @media (max-width: 575px) {
+		//     padding-left: 0;
+		//   }
+		li {
+			list-style: none;
+			margin-bottom: 20px;
+
+			.lesson__dtl--btn {
+				display: inline-block;
+				// background: #00aee0;
+				background-size: 200% auto;
+				padding: 0px 30px;
+				color: #fff;
+				font-family: $font__raleway;
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 40px;
+				border-radius: 0px;
+				background: rgba(131, 195, 49, 0.8);
+				outline: none !important;
+				// box-shadow: 0px 20px 50px rgba(0, 175, 224, 0.3);
+				text-align: center;
+				cursor: pointer;
+				-webkit-transition: all 0.3s ease 0s;
+				-moz-transition: all 0.3s ease 0s;
+				-o-transition: all 0.3s ease 0s;
+				transition: all 0.3s ease 0s;
+
+				&:hover {
+					background: #00aee0;
+					color: #ffffff;
+					box-shadow: 0px 10px 30px rgba(0, 175, 224, 0.3);
+					text-decoration: none;
+				}
+
+				//   @media (max-width: 575px) {
+				//     min-width: 100px;
+				//     font-size: 10px;
+				//     padding: 0 10px;
+				//   }
+			}
+
+			// &:last-child {
+			// 	margin-bottom: 0;
+			// }
+		}
+	}
+}
+
+.course__details--right {
+	@include media(tablet) {
+		margin: 10px auto;
+		width: 70%;
+	}
+
+	@include media(mobile) {
+		margin: 10px auto;
+		width: 70%;
+	}
+
+	@include media(mobilemedium) {
+		margin: 10px auto;
+		width: 80%;
+	}
+
+	@include media(mobilesmall) {
+		margin: 10px auto;
+		width: 90%;
+	}
+
+	ul {
+		padding-left: 0;
+
+		li {
+			list-style: none;
+			background: rgba(97, 186, 109, 0.3);
+			padding: 10px 22px;
+			margin-bottom: 10px;
+
+			a {
+				color: #222222;
+				text-align: left;
+				text-decoration: none;
+
+				p {
+					margin-bottom: 0px;
+					font-family: $font__roboto;
+					font-weight: 500;
+					font-size: 16px;
+				}
+			}
+
+			.or {
+				color: #222222;
+			}
+		}
+	}
+
+	.instructor-item {
+		margin: 15px 0;
+	}
+
+	.instructor-item__image {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		overflow: hidden;
+		background: #f1f1f1;
+		text-align: center;
+	}
+
+	.instructor-item__name {
+		font-family: $font__roboto;
+		font-weight: 500;
+		font-size: 16px;
+		padding-left: 20px;
+	}
+
+	.instructors-list p {
+		font-family: $font__roboto;
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+	.enroll__course {
+		margin: 20px 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.enroll {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.reviews {
+
+		span,
+		.star {
+			width: 31%;
+			margin-bottom: 10px;
+		}
+	}
+
+	.avg-review {
+		background: #04091e;
+		text-align: center;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 600;
+		padding: 20px 0px;
+
+		span {
+			font-size: 18px;
+			color: #222222;
+		}
+
+		//   @media (max-width: 991px) {
+		//     margin-bottom: 20px;
+		//   }
+	}
+
+	.single-reviews {
+		.thumb {
+			// @media (max-width: 1024px) {
+			//   margin-right: 10px;
+			// }
+		}
+
+		h5 {
+			display: inline-flex;
+
+			// @media (max-width: 1024px) {
+			//   display: block;
+			// }
+			.star {
+				margin-left: 10px;
+				//   @media (max-width: 1024px) {
+				//     margin: 10px 0;
+				//   }
+			}
+		}
+	}
+
+	.feedeback {
+		margin-top: 30px;
+
+		textarea {
+			resize: none;
+			// height: 130px;
+			background: #f1f9ff;
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+
+		h6 {
+			margin: 0;
+			padding: 0;
+			font-family: $font__roboto;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+		}
+	}
+
+	.comments-area {
+		padding: 0;
+		border: 0;
+		background: transparent;
+	}
+
+	.comment-list {
+		padding: 0;
+		border: 0;
+
+		.star {
+			margin-left: 20px;
+		}
+
+		.thumb__section {
+			width: 70px;
+			margin: 15px 20px 0 0;
+		}
+
+		.thumb {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			// margin-right: 20px;
+			// margin-top: 15px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+		}
+
+		.comment {
+			margin: 0;
+			padding: 0;
+			font-family: $font__roboto;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}
+
+.star {
+	.checked {
+		color: #4dbf1c;
+	}
+}
+
+/* End  Courses Details Area css
+  ============================================================================================ */
+.course-like {
+	margin: 25px 0;
+
+	@include media(mobilemedium) {
+		margin: 25px auto;
+		text-align: center;
+	}
+}
+
+.like__btn {
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin-right: 8px;
+}
+
+.like__btn i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	opacity: 1;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	top: 40px;
+	width: 120px;
+	background-color: $color-site-primary;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 5px;
+	position: absolute;
+	transform: translateX(-50%) translateY(-20px);
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(-50%) translateY(0px);
+}
+
+.tooltip .tooltiptext::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: $color-site-primary;
+	left: 50%;
+	transform: rotate(45deg) translateX(-50%);
+	top: 0px;
+	z-index: -1;
+}
+
+
+.tooltiptext ul {
+	margin: 0;
+	padding: 0;
+}

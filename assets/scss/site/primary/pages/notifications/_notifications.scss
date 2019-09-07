@@ -1,0 +1,59 @@
+.notifications__section {
+    font-family: $font__roboto;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $color__text-main;
+}
+
+.notification__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+.notification__content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        border: 1px solid $color-site-primary;
+        background-color: transparent;
+
+        &th,
+        &td {
+            padding: 0.75rem;
+            vertical-align: middle;
+            border-top: 1px solid $color-site-primary;
+        }
+    }
+
+    .table thead th {
+        vertical-align: middle !important;
+        border-bottom: 1px solid $color-site-primary !important;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.50rem !important;
+        vertical-align: middle !important;
+        border-top: 1px solid $color-site-primary !important;
+    }
+
+    .notification__message--unseen {
+        color: $color-site-primary;
+
+        a {
+            text-decoration: none;
+            color: $color-site-primary !important;
+
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: $color-site-primary !important;
+            }
+        }
+    }
+}

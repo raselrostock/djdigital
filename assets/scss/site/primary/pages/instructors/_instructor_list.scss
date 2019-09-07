@@ -1,0 +1,85 @@
+.instructors_section {
+    width: 100%;
+    font-family: $font__roboto;
+    color: $color__text-main;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.instructor {
+    padding: 20px;
+}
+
+.instructor-image__container {
+    width: 180px;
+    height: 180px;
+    border: solid 14px #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(97, 186, 109, 0.9);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructor__image {
+    // position: absolute;
+    // top: -14px;
+    // left: -14px;
+    width: 165px;
+    height: 165px;
+}
+
+.instructor__image img {
+    max-width: 100%;
+}
+
+.instructor__name {
+    margin-top: 18px;
+}
+
+.instructor__name a {
+    font-family: $font__raleway;
+    font-size: 20px;
+    color: $color-site-primary;
+    font-weight: 700;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.instructor__name a:hover {
+    color: $color-site-primary;
+    text-decoration: none;
+}
+
+.instructor__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color__text-main;
+    margin-top: 5px;
+}
+
+.instructor__text {
+    margin-top: 16px;
+}
+
+.instructor__social {
+    margin-top: 22px;
+}
+
+.instructor__social p i {
+    font-size: 14px;
+    color: $color-site-primary;
+    padding: 6px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.instructor__social p i:hover {
+    color: rgba(0, 0, 0, 1);
+}

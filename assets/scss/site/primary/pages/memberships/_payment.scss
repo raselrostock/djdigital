@@ -1,0 +1,47 @@
+.payment__section {
+    margin: 0;
+}
+
+.payment__info {
+    font-family: $font__roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px auto;
+    width: 80%;
+    padding: 0;
+    color: $color__text-main;
+
+    h6 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+#stripe-form {
+    @include media(mobilemedium) {
+        padding: 10px !important;
+        height: auto !important;
+    }
+
+}
+
+.stripe-form-row {
+    @include media(mobilemedium) {
+        width: 100% !important;
+        /* float: left; */
+    }
+}
+
+#stripeBtnLabel {
+    @include media(mobilemedium) {
+        text-align: center;
+    }
+}
+
+#stripeBtn {
+    @include media(mobilemedium) {
+        display: block !important;
+        margin: 25px auto 10px !important;
+        float: none !important;
+    }
+}

@@ -1,0 +1,342 @@
+.lesson__details {
+    .title {
+        font-size: 21px;
+        border: none;
+        cursor: pointer;
+        margin-top: 40px;
+        border-bottom: 1px solid #eeeeee;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 22px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 1px;
+            width: 74px;
+            background: #4dbf1c;
+        }
+    }
+}
+
+.lesson__details,
+.lesson__details--left,
+.lesson__details--right {
+    font-family: $font__roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color__text-main;
+}
+
+.lesson__details--left {
+    @include media(tablet) {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    @include media(mobile) {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    @include media(mobilemedium) {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    @include media(mobilesmall) {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+.lesson__details--right {
+    @include media(tablet) {
+        margin: 10px auto;
+        width: 60%;
+    }
+
+    @include media(mobile) {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    @include media(mobilemedium) {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    @include media(mobilesmall) {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/*********************************
+7.2 Curriculum
+*********************************/
+
+.curriculum__items {
+    font-family: $font__raleway;
+    margin-top: 58px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.curriculum__item:not(:last-child) {
+    margin-bottom: 69px;
+}
+
+.curriculum__title,
+.curriculum__num {
+    font-family: $font__raleway;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+.curriculum__body {
+    border: solid 1px #e5e5e5;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 31px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    border-radius: 3px;
+}
+
+.curriculum__content {
+    margin-top: 27px;
+    font-family: $font__raleway;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.curriculum__body__title {
+    font-family: $font__raleway;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.curriculum__body__text {
+    margin-top: 11px;
+}
+
+.curriculum__content ul li {
+    line-height: 31px;
+    font-family: $font__raleway;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+
+    @include media(tablet) {
+        display: block !important;
+        font-size: 14px;
+    }
+
+    @include media(mobile) {
+        display: block !important;
+        font-size: 12px;
+    }
+
+    @include media(mobilemedium) {
+        display: block !important;
+        font-size: 12px;
+    }
+
+    @include media(mobilesmall) {
+        display: block !important;
+        font-size: 10px;
+    }
+}
+
+.curriculum__content>ul>li:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.curriculum__content ul li a {
+    position: relative;
+    line-height: 31px;
+    font-family: $font__raleway;
+    font-size: 16px;
+    font-weight: 600;
+    // color: rgba(0, 0, 0, 0.9);
+    color: $color-site-primary;
+    margin-left: 2px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+
+    @include media(tablet) {
+        font-size: 14px;
+    }
+
+    @include media(mobile) {
+        font-size: 12px;
+    }
+
+    @include media(mobilemedium) {
+        font-size: 12px;
+    }
+
+    @include media(mobilesmall) {
+        font-size: 10px;
+    }
+}
+
+.curriculum__content ul li a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 2px);
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    content: '';
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.curriculum__content ul li a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.curriculum__content ul li a:hover::after {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.curriculum__content ul li i {
+    margin-right: 15px;
+    color: $color-site-primary;
+    // color: #f9cf0e;
+}
+
+.curriculum__content ul li ul {
+    padding-left: 27px;
+}
+
+.curriculum__content ul li ul li i {
+    font-size: 12px;
+
+    @include media(tablet) {
+        font-size: 14px;
+    }
+
+    @include media(mobile) {
+        font-size: 12px;
+    }
+
+    @include media(mobilemedium) {
+        font-size: 12px;
+    }
+
+    @include media(mobilesmall) {
+        font-size: 10px;
+    }
+}
+
+.curriculum__content ul li ul li {
+    height: 33px;
+
+    @include media(tablet) {
+        height: auto;
+    }
+
+    @include media(mobile) {
+        height: auto;
+    }
+
+    @include media(mobilemedium) {
+        height: auto;
+    }
+
+    @include media(mobilesmall) {
+        height: auto;
+    }
+}
+
+.curriculum__content ul li ul li {
+    border-bottom: solid 1px #ebebeb;
+}
+
+.curriculum__time i {
+    font-size: 14px !important;
+}
+
+.quiz__section {
+    margin: 0;
+    padding: 0;
+}
+
+.quiz__link {
+    font-family: $font__roboto;
+    font-size: 16px;
+    font-weight: 600;
+
+    i {
+        color: $color-site-primary;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    a {
+        color: $color-site-primary;
+        font-family: $font__roboto;
+        font-size: 16px;
+        font-weight: 600;
+
+        &:hover,
+        &:active {
+            color: #00aee0;
+            text-decoration: none;
+        }
+    }
+}
+
+.commentor__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f1f1f1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.comment__content {
+    font-family: $font__roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color__text-main;
+}
+
+.comment__author {
+    margin: 0;
+    padding: 0 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $color__text-main;
+}
+
+.comment__date {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color__text-main;
+}
+
+.comment__comment {
+    margin: 0;
+    padding: 10px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+}

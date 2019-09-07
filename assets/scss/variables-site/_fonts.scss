@@ -1,0 +1,32 @@
+/*
+ * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
+ * This results in a jumping cursor when typing in both the Classic and block
+ * editors. The following font-face override fixes the issue by manually inserting
+ * a custom font that includes just a Hoefler Text space replacement for that
+ * character instead.
+ */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i');
+
+
+
+// Font and typographic variables
+
+$font__raleway: 'Raleway', sans-serif;
+$font__roboto: 'Roboto', sans-serif;
+
+$font__size_base: 1rem;
+$font__size-ratio: 1.125;
+
+$font__size-xxs:   1em / (1.5 * $font__size-ratio); //9.48
+$font__size-xs:    1em / (1.25 * $font__size-ratio); //11.37
+$font__size-sm:    1em / (1 * $font__size-ratio); //14.22
+$font__size-md:    1em * (1 * $font__size-ratio); //18px
+$font__size-lg:    1em * (1.5 * $font__size-ratio); //27px
+$font__size-xl:    1em * (2 * $font__size-ratio); //36px
+$font__size-xxl:   1em * (2.5 * $font__size-ratio); //45px
+$font__size-xxxl:  1em * (3 * $font__size-ratio);
+
+//$font__line-height-body: 1.8;
+$font__line-height-body: 1.6;
+$font__line-height-heading: 1.2;

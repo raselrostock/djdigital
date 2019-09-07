@@ -1,0 +1,84 @@
+/* Call to Action Area CSS */
+
+.subscription-wrapper {
+    position: relative;
+    z-index: 1;
+    @include bg-gradients;
+    padding: 70px 0;
+
+    .subscription-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: center;
+
+        @include media(mobilemedium) {
+            text-align: center;
+        }
+
+        .subscribe-email {
+            background: $color__text-white;
+            border: solid 2px rgb(97, 186, 109);
+            box-sizing: border-box;
+            outline: none;
+            padding: #{.36 * $size__spacing-unit} #{.66 * $size__spacing-unit};
+            -webkit-appearance: none;
+            color: $color__text-main;
+            font-family: $font__roboto;
+            font-size: 18px;
+            font-weight: 500;
+            outline-offset: 0;
+            width: 280px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 8px;
+
+            @include media(mobilemedium) {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+
+            &:focus {
+                border-color: rgb(97, 186, 109);
+                outline: thin solid rgba(97, 186, 109, 0.7);
+                outline-offset: -4px;
+                width: 280px;
+                height: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .subscribe-btn {
+        min-width: 110px;
+        padding: 0 20px;
+        height: 42px;
+        line-height: 38px;
+        border: 2px solid $color__text-white;
+
+        &:hover,
+        &:active {
+            outline: none;
+            color: #fff;
+            @include bg-gradients;
+            border: 2px solid $color__text-main !important;
+            cursor: pointer;
+        }
+
+        &:visited {
+            outline: none;
+            color: #fff;
+            @include bg-gradients;
+            border: 2px solid $color__text-main !important;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: #fff;
+            @include bg-gradients;
+            border: 2px solid $color__text-main !important;
+            outline: none;
+            outline-offset: -4px;
+        }
+    }
+}
